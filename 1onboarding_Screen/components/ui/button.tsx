@@ -51,6 +51,22 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     )
   }
 )
+  variant="outline"
+  className="w-full max-w-md border-blue-300 text-blue-700"
+>
+  Continue in Free Mode
+</Button>
+ 
+<Button
+  onClick={() => console.log("Explore button clicked")}
+  variant="ghost"
+  className="w-full max-w-md text-gray-600"
+>
+  Explore as Guest
+</Button>
+    )
+  }
+)
 Button.displayName = "Button"
 
 export { Button, buttonVariants }
