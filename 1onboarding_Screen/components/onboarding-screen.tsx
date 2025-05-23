@@ -128,6 +128,7 @@ export default function OnboardingScreen() {
       <div className="mt-8 flex flex-col items-center space-y-3 px-4">
         <Button className="w-full max-w-md bg-blue-600 text-white hover:bg-blue-700">Start Pro Trial</Button>
         <Button
+	 asChild={false}
  	 onClick={() => console.log("Continue button clicked")}
   	variant="outline"
   	className="w-full max-w-md border-blue-300 text-blue-700"
@@ -136,6 +137,7 @@ export default function OnboardingScreen() {
 	</Button>
  
 	<Button
+	 asChild={false}
   	onClick={() => console.log("Explore button clicked")}
   	variant="ghost"
   	className="w-full max-w-md text-gray-600"
